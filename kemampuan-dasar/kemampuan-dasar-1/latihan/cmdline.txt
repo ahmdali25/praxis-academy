@@ -1,0 +1,10 @@
+1. ls untuk menampilkan file/direktori di direktori saat ini
+2. ls -R untuk menampilkan semua file tidak hanya direktori tetapi juga di subdirekotri
+3. ls -a untuk menampilkan semua file termasuk juga hidden file
+4. cat filename, untuk menampilkan isi dari suatu file
+5. rm filename, untuk menghapus file
+6. mv filename new_file_location, untuk memindahkan file ke direktori lain
+7. mv filename newfilename, untuk mengubah nama file
+8. mkdir directoryname, untuk membuat direktori baru
+9. rmdir directoryname, untuk menghapus direktori
+10. mv directoryname newdirectoryname

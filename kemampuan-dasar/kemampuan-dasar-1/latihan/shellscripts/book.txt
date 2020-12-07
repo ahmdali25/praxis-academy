@@ -1,0 +1,4 @@
+1. Javascript
+3. DOM
+4. AJAX
+5. Vue JS

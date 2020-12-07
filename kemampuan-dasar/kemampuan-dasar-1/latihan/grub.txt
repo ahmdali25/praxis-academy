@@ -1,0 +1,2 @@
+Parameter yang nampil di grub :
+Kernel x86_64 Linux 5.4.0-42-generic

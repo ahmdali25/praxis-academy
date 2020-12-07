@@ -1,0 +1,2 @@
+Kernel linux :
+Linux 5.4.0-42-generic x86_64
