@@ -25,5 +25,5 @@ const phy = 22/7;
 let r = 7;
 luas = phy * r * r;
 console.log("Jari-jari =", + r);
-// console.log("Luas lingkaran =", + luas);
-console.log("Luas lingkaran =", + Math.floor(luas));
+console.log("Luas lingkaran (belum dibulatkan) =", + luas);
+console.log("Luas lingkaran =", + Math.round(luas));
