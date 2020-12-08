@@ -24,4 +24,6 @@ console.log(h);
 const phy = 22/7;
 let r = 7;
 luas = phy * r * r;
-console.log("Luas lingkaran =", + luas);
+console.log("Jari-jari =", + r);
+// console.log("Luas lingkaran =", + luas);
+console.log("Luas lingkaran =", + Math.floor(luas));
