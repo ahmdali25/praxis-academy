@@ -1,0 +1,8 @@
+displayDir=$(tree /home/ahmadali)
+Process_Find=$(find /home/ahmadali -type f -name '*.java');
+if [ $Process_Find ];
+then
+  ech
+else
+  echo 'Tidak ada file Java pada direktori.'
+fi
