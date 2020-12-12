@@ -101,3 +101,18 @@ viko = null;
 // visitedSet will be cleaned automatically
 
 // Date and Time
+
+let now = new Date();
+console.log(now);
+console.log(now.getSeconds() + " seconds");
+console.log(now.getMinutes() + " minutes");
+console.log(now.getHours());
+console.log(now.getDay());
+console.log(now.getMonth());
+console.log(now.getFullYear());
+
+// Setting date
+let today = new Date();
+
+today.setHours(7);
+console.log(today);
