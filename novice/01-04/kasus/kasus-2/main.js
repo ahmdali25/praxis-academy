@@ -6,7 +6,12 @@ function EngToId () {
     map.set('pencil', 'pensil');
     map.set('bolpoint', 'pulpen');
     map.set('eraser', 'penghapus');
-    console.log(map.get(word));
+    let sWord = map.has(word);
+    if (sWord == true) {
+        console.log(map.get(word));
+    } else {
+        console.log("Kata tidak ditemukan dari kamus");
+    }
 
     let addWord = prompt("Menambahkan kata : ");
     let saveAddWord = addWord;
@@ -14,9 +19,15 @@ function EngToId () {
     map.set(addWord, transWord);
     console.log(saveAddWord + " = " + map.get(addWord));
 
-    prompt("Menghapus kata : ");
-    map.delete(word);
-    map.set(word, "Kata telah dihapus");
-    console.log(map.get(word));
+    let delWord = word;
+    delWord = prompt("Menghapus kata : ");
+    let newWord = map.has(delWord);
+    if (newWord == true) {
+        map.delete(delWord);
+        map.set(delWord, 'Kata telah dihapus dari kamus');
+        console.log(map.get(delWord));
+    } else {
+        console.log("Kata tidak ada dalam kamus");
+    }
 }
 EngToId();
