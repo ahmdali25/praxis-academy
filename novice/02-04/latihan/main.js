@@ -13,7 +13,7 @@ function f() {
     }
 }
   
-// f(); // cleanup!
+f(); // cleanup!
 
 // throw
 
