@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <h1>Learn Vuex</h1>
     <!-- Button untuk increment dan decrement value dari count -->
     <button @click="addCount">Increment</button> |
@@ -13,18 +12,25 @@
       <li>{{ user.name }}</li>
     </ul>
     <!-- <li>{{ $store.state.users }}</li> -->
+    <input :value="classData" @input="updateClassData">
+    <p>{{ $store.state.class }}</p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-// import axios from 'axios'
+import { mapState } from 'vuex'
 
 export default {
   name: 'Home',
   components: {
-    // HelloWorld
+    
+  },
+
+  computed: {  
+    ...mapState({
+      classData: state => state.class
+    })
   },
 
   methods: {
@@ -39,6 +45,10 @@ export default {
 
     getUsers(){
       this.$store.dispatch('users')
+    },
+
+    updateClassData (e) {
+      this.$store.commit('updateClassData', e.target.value)
     }
   },
   // method untuk membuat instance

@@ -8,7 +8,8 @@ export default new Vuex.Store({
   // store state
   state: {
     count: 0,
-    users: []
+    users: [],
+    class: []
   },
   // untuk mengganti state di store
   mutations: {
@@ -23,6 +24,10 @@ export default new Vuex.Store({
     // method untuk mendapatkan value dari properti users
     getUsers (state, data) {
       state.users = data;
+    },
+
+    updateClassData (state, data) {
+      state.class = data;
     }
   },
   // untuk menghitung state yang diturunkan dari store state
@@ -49,6 +54,10 @@ export default new Vuex.Store({
       } catch (error) {
         console.log(error);
       }
+    },
+
+    updateClassData (context) {
+      context.commit('getClass')
     }
   },
   modules: {
